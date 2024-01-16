@@ -134,3 +134,5 @@ Wadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieEReposit
 Madapters/src/main/java/dev/skynet/alpha/adapters/out/mapper/MovieEMapper.java,b\5\b55c21203aa8c6e620477ddc60c1cb499dde8556
 ƒ
 Sadapters/src/main/java/dev/skynet/alpha/adapters/in/controller/MovieController.java,7\2\72a971ae477de59a5c7151aecb886166b6552793
+I
+adapters/http/movies.http,2\0\20c8dd18ce0e583615d97f0b435ff97012cceddc

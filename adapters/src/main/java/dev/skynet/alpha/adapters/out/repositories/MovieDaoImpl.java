@@ -37,6 +37,8 @@ public class MovieDaoImpl implements MovieDao {
 
   @Override
   public Movie save(@NonNull Movie movie) {
+    MovieE e = new MovieE();
+    e.setId(1L);
     return MovieEMapper.MAPPER.movie(movieERepository.save(MovieEMapper.MAPPER.movieE(movie)));
   }
 }

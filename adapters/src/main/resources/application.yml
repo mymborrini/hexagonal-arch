@@ -6,3 +6,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/skynet?currentSchema=alpha
     username: postgres
     password: postgres123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop

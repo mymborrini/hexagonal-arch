@@ -1,0 +1,15 @@
+### Find All Movies
+
+GET http://localhost:8080/movies
+
+
+### Insert a new movies
+
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title":"Don 2",
+  "description":"Action|Crime|Mystery|Romance|Thriller",
+  "directorName":"Amelie Hellwig"
+}

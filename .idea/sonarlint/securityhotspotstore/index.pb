@@ -120,3 +120,17 @@ F
 application/.gitignore,d\9\d98813f3770e959d990ab93631fe0ab8c6d2a078
 a
 1application/.mvn/wrapper/maven-wrapper.properties,1\f\1f54fdf7817350f79913fead5019cb00beb4ec4c
+x
+Hadapters/src/main/java/dev/skynet/alpha/adapters/out/entities/Movie.java,6\2\622cc9b8ccabbf13af8c278f640a5d666b033dda
+†
+Vadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieRepository.java,3\9\39760740a5325c0ed87696447a2855e3cd5d0c92
+ƒ
+Sadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieDaoImpl.java,a\3\a3f1c1d2db926afa1b54583f170745100b9a6e1c
+y
+Iadapters/src/main/java/dev/skynet/alpha/adapters/out/entities/MovieE.java,5\b\5b9fcf26cea59a73a727db26ab309a1055cf8c51
+‡
+Wadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieERepository.java,b\5\b5cfa44521a0e238968d1c0c93b9b08222ef16a8
+}
+Madapters/src/main/java/dev/skynet/alpha/adapters/out/mapper/MovieEMapper.java,b\5\b55c21203aa8c6e620477ddc60c1cb499dde8556
+ƒ
+Sadapters/src/main/java/dev/skynet/alpha/adapters/in/controller/MovieController.java,7\2\72a971ae477de59a5c7151aecb886166b6552793

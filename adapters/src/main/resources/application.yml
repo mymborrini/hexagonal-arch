@@ -1,0 +1,8 @@
+
+spring:
+  application:
+    name: Alpha
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skynet?currentSchema=alpha
+    username: postgres
+    password: postgres123

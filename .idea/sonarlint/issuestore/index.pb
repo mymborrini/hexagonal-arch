@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-Q
-!src/main/java/dev/skynet/App.java,e\c\ec14adf4cfe99161bad86c0494ad4208df2a951f
 >
 domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 ^
@@ -21,28 +19,18 @@ z
 Jdomain/src/main/java/dev/skynet/alpha/exceptions/MissingBeanException.java,b\4\b43ab7878f282338a3427f5345b39ecd9404b523
 x
 Happlication/src/main/java/dev/skynet/alpha/application/dto/NewMovie.java,4\e\4e7f7cd1e22a5312473e69cd5ce4392bf5ea223e
-w
-Gdomain/src/main/java/dev/skynet/alpha/exceptions/ItemAlreadyExists.java,c\2\c22e264967c1968fa0aa35cc938070bef070a663
-r
-Bdomain/src/main/java/dev/skynet/alpha/exceptions/ItemNotFound.java,0\c\0cb23b7df4f7a35f2775639e03c2e09b8f4a9f3d
 €
 Pdomain/src/main/java/dev/skynet/alpha/exceptions/ItemAlreadyExistsException.java,0\9\099d007f353683e84871d9d433fc1f6a73a61339
 {
 Kdomain/src/main/java/dev/skynet/alpha/exceptions/ItemNotFoundException.java,4\c\4c436f14f21b9e20a3a8216bd4006f4bcf406116
 ~
 Napplication/src/main/java/dev/skynet/alpha/application/mapper/MovieMapper.java,0\f\0f817e3805ebe869aa43413c47efa6d12b878bc9
-b
-2domain/src/test/java/dev/skynet/alpha/AppTest.java,0\c\0c28fec04ebe47e6478505bfea76f4154df81160
 @
 adapters/HELP.md,4\a\4a86250307a045fd405017b02a814dac26b7eb6c
 @
 adapters/pom.xml,7\c\7c826e9c9043d9c0c956df2b67a06db5202aee5b
 |
 Lapplication/src/test/java/dev/skynet/alpha/application/ApplicationTests.java,2\d\2d92ec955ad66edaf6c6ce98e23e8756c2c25228
-~
-Nadapters/src/test/java/dev/skynet/alpha/adapters/AdaptersApplicationTests.java,6\6\66c14e8d9e9f6be72c086f84d5f62c0b191a200c
-y
-Iadapters/src/main/java/dev/skynet/alpha/adapters/AdaptersApplication.java,b\2\b25c33c320a700c166b0dadfe6d4a0f8ff0f3ec3
 v
 Fadapters/src/main/java/dev/skynet/alpha/adapters/AlphaApplication.java,5\0\50fd34f1ad92a8e26189ebfee7195dbcade8c9d1
 {
@@ -120,10 +108,6 @@ F
 application/.gitignore,d\9\d98813f3770e959d990ab93631fe0ab8c6d2a078
 a
 1application/.mvn/wrapper/maven-wrapper.properties,1\f\1f54fdf7817350f79913fead5019cb00beb4ec4c
-x
-Hadapters/src/main/java/dev/skynet/alpha/adapters/out/entities/Movie.java,6\2\622cc9b8ccabbf13af8c278f640a5d666b033dda
-†
-Vadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieRepository.java,3\9\39760740a5325c0ed87696447a2855e3cd5d0c92
 ƒ
 Sadapters/src/main/java/dev/skynet/alpha/adapters/out/repositories/MovieDaoImpl.java,a\3\a3f1c1d2db926afa1b54583f170745100b9a6e1c
 y
@@ -136,3 +120,5 @@ Madapters/src/main/java/dev/skynet/alpha/adapters/out/mapper/MovieEMapper.java,
 Sadapters/src/main/java/dev/skynet/alpha/adapters/in/controller/MovieController.java,7\2\72a971ae477de59a5c7151aecb886166b6552793
 I
 adapters/http/movies.http,2\0\20c8dd18ce0e583615d97f0b435ff97012cceddc
+;
+Jenkinsfile,0\c\0c2c5c506cef0ed2d3ad2b7e45e97980b66f5520

@@ -27,7 +27,7 @@ pipeline {
                     }
                 }
 
-                stage('Domain') {
+                stage('Adapters') {
                     steps {
                         sh 'mvn test -f adapters/pom.xml'
                     }

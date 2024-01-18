@@ -60,10 +60,6 @@ Q.idea/sonarlint/securityhotspotstore/b/a/baba0ac4d1097a1d859e7ceaee70e17994adf9
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 Å
-Q.idea/sonarlint/securityhotspotstore/e/c/ec14adf4cfe99161bad86c0494ad4208df2a951f,b\1\b19d1f60c5bd97a472ffdf76be5f2101ab389bab
-Å
-Q.idea/sonarlint/securityhotspotstore/0/c/0cb23b7df4f7a35f2775639e03c2e09b8f4a9f3d,3\a\3af7150279fe8f7323d83a29c568075d0b4f5a2b
-Å
 Q.idea/sonarlint/securityhotspotstore/4/c/4c436f14f21b9e20a3a8216bd4006f4bcf406116,e\3\e385c8449d6175a5f03b7e5a488a6999eb3d3953
 Å
 Q.idea/sonarlint/securityhotspotstore/0/9/099d007f353683e84871d9d433fc1f6a73a61339,3\2\32c1f06ad039d456064be32a73276b2d11f60a4f
@@ -78,8 +74,6 @@ Q.idea/sonarlint/securityhotspotstore/4/e/4e7f7cd1e22a5312473e69cd5ce4392bf5ea22
 Å
 Q.idea/sonarlint/securityhotspotstore/8/b/8b11330a6810846535e4b5ba2024ccfcee112862,d\5\d56131b384ca12a9b220bea2019d83fd10a7005a
 w
-G.idea/sonarlint/issuestore/c/2/c22e264967c1968fa0aa35cc938070bef070a663,3\d\3d80fbf4023f06e12a0b7bc984d8db18eed09fee
-w
 G.idea/sonarlint/issuestore/0/9/099d007f353683e84871d9d433fc1f6a73a61339,a\c\ac1568e7592eee222be17c94d2f760c679077744
 w
 G.idea/sonarlint/issuestore/b/4/b43ab7878f282338a3427f5345b39ecd9404b523,d\8\d88e7f0627081645060fee236bf72de432a7608f
@@ -91,8 +85,6 @@ G.idea/sonarlint/issuestore/4/e/4e7f7cd1e22a5312473e69cd5ce4392bf5ea223e,4\6\46
 .adapters/.mvn/wrapper/maven-wrapper.properties,1\4\14e7bcfb2c725ad264e60fede133ced3f689bd55
 C
 adapters/.gitignore,f\5\f54bd298a6ea86feb2a0f7421e7a284b6ebfae75
-Å
-Q.idea/sonarlint/securityhotspotstore/c/2/c22e264967c1968fa0aa35cc938070bef070a663,2\3\23e2560abd46f05ff40a78c838d61d0fada86c2b
 A
 adapters/mvnw.cmd,5\1\5192640d9670d91f0eb0537557436c5f43307c95
 Å
@@ -125,3 +117,6 @@ I
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+:
+
+domain.iml,6\c\6c720658c879812199c924371d42171e343abfa0

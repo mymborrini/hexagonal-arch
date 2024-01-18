@@ -14,13 +14,17 @@ public class MovieE {
   @GeneratedValue(strategy = GenerationType.SEQUENCE)
   private Long id;
 
+  @Column(name = "title")
   private String title;
+
+  @Column(name = "description")
   private String description;
 
   @Column(name = "director_name")
   private String directorName;
 
   @Version
+  @Column(name = "version")
   private Integer version;
 
 }

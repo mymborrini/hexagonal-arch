@@ -17,19 +17,19 @@ pipeline {
 
                 stage('Domain') {
                     steps {
-                        sh 'mvn test -f domain/pom.xml'
+                        sh 'mvn test -f domain/pom.xml --also-make-dependents'
                     }
                 }
 
                 stage('Application') {
                     steps {
-                        sh 'mvn test -f application/pom.xml'
+                        sh 'mvn test -f application/pom.xml --also-make-dependents'
                     }
                 }
 
                 stage('Adapters') {
                     steps {
-                        sh 'mvn test -f adapters/pom.xml'
+                        sh 'mvn test -f adapters/pom.xml --also-make-dependents'
                     }
                 }
 

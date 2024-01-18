@@ -10,11 +10,43 @@ pipeline {
     }
 
     stages {
+
+        stage('Test') {
+
+            parallel {
+
+                stage('Domain') {
+                    steps {
+                        sh 'mvn test -f domain/pom.xml'
+                    }
+                }
+
+                stage('Application') {
+                    steps {
+                        sh 'mvn test -f application/pom.xml'
+                    }
+                }
+
+                stage('Domain') {
+                    steps {
+                        sh 'mvn test -f adapters/pom.xml'
+                    }
+                }
+
+
+
+            }
+        }
+
         stage('Package') {
+
+            when {
+                branch 'main'
+            }
 
             steps {
                 script {
-                    sh 'mvn package -f pom.xml'
+                    sh 'mvn install -f pom.xml'
                 }
             }
         }

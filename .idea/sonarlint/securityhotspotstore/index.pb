@@ -117,3 +117,5 @@ I
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+K
+adapters/docker-compose.yml,8\c\8c137ac00291344c4d30b65bd6dad3d967671e67

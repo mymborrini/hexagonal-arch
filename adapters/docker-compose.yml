@@ -1,0 +1,24 @@
+version: '3'
+
+
+networks:
+  hexagonal-arch:
+    driver: bridge
+
+services:
+
+  db:
+    image: postgres:15
+    restart: always
+    hostname: psql15
+    networks:
+      - hexagonal-arch
+    environment:
+      POSTGRES_PASSWORD: postgres123
+
+  alpha:
+    image: mborrini/hexagonal-arch
+    restart: no
+    hostname: alpha
+    networks:
+      - hexagonal-arch

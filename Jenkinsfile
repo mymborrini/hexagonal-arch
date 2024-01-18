@@ -31,7 +31,7 @@ pipeline {
                     steps {
                         sh 'mvn test -f adapters/pom.xml --also-make-dependents'
                     }
-                } // add a comment another one
+                } // add a comment another one and another one
 
 
 

@@ -20,5 +20,7 @@ services:
     image: mborrini/hexagonal-arch
     restart: 'no'
     hostname: alpha
+    ports:
+      - "8000:8080"
     networks:
       - hexagonal-arch

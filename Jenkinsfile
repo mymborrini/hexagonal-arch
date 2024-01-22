@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                    // app = docker.build(DOCKER_IMAGE_NAME + ":${env.BUILD_ID}")
-                    app = docker.build(DOCKER_IMAGE_NAME + "latest")
+                    app = docker.build(DOCKER_IMAGE_NAME + ":latest")
                     app.push()
                 }
             }

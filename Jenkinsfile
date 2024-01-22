@@ -10,11 +10,23 @@ pipeline {
     }
 
     stages {
+
+        stage('Test') {
+
+           steps {
+               sh 'mvn test -f pom.xml'
+           }
+        }
+
         stage('Package') {
+
+            when {
+                branch 'main'
+            }
 
             steps {
                 script {
-                    sh 'mvn package -f pom.xml'
+                    sh 'mvn install -f pom.xml'
                 }
             }
         }
@@ -25,19 +37,14 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build(DOCKER_IMAGE_NAME)
+                   // app = docker.build(DOCKER_IMAGE_NAME + ":${env.BUILD_ID}")
+                    app = docker.build(DOCKER_IMAGE_NAME + "latest")
+                    app.push()
                 }
             }
         }
 
-        stage('Deploy'){
-            when {
-                branch 'main'
-            }
-            steps {
-                sh 'docker-compose up -d'
-            }
-        }
+
 
 
     }

@@ -13,29 +13,9 @@ pipeline {
 
         stage('Test') {
 
-            parallel {
-
-                stage('Domain') {
-                    steps {
-                        sh 'mvn test -f domain/pom.xml --also-make-dependents'
-                    }
-                }
-
-                stage('Application') {
-                    steps {
-                        sh 'mvn test -f application/pom.xml --also-make-dependents'
-                    }
-                }
-
-                stage('Adapters') {
-                    steps {
-                        sh 'mvn test -f adapters/pom.xml --also-make-dependents'
-                    }
-                } // add a comment another one
-
-
-
-            }
+           steps {
+               sh 'mvn test -f pom.xml'
+           }
         }
 
         stage('Package') {
@@ -57,19 +37,14 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build(DOCKER_IMAGE_NAME)
+                   // app = docker.build(DOCKER_IMAGE_NAME + ":${env.BUILD_ID}")
+                    app = docker.build(DOCKER_IMAGE_NAME + "latest")
+                    app.push()
                 }
             }
         }
 
-        stage('Deploy'){
-            when {
-                branch 'main'
-            }
-            steps {
-                sh 'docker-compose up -d'
-            }
-        }
+
 
 
     }

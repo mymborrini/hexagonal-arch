@@ -44,7 +44,7 @@ agent {
             steps {
                 script {
                     app = docker.build(DOCKER_IMAGE_NAME + ":latest")
-                    docker.withRegistry('https://hub.docker.com', 'docker-cred'){
+                    docker.withRegistry('', 'docker-cred'){
                         app.push()
                     }
                 }

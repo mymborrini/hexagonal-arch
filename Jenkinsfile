@@ -7,8 +7,6 @@ agent {
 */
     agent any
 
-    def app
-
     tools {
         maven 'maven3'
     }
@@ -39,23 +37,13 @@ agent {
             }
         }
 
-        stage('Build Docker Image'){
+        stage('Build Push Docker Image'){
             when {
                 branch 'main'
             }
             steps {
                 script {
                     app = docker.build(DOCKER_IMAGE_NAME + ":latest")
-                }
-            }
-        }
-
-        stage('Push Docker Image'){
-            when {
-                branch 'main'
-            }
-            steps {
-                script {
                     docker.withRegistry('https://hub.docker.com', 'docker-cred'){
                         app.push()
                     }

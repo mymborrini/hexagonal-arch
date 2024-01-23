@@ -1,5 +1,13 @@
 pipeline {
+
+/* This is really useful if you need to run your script inside a specific container
+agent {
+        docker { image 'node:20.11.0-alpine3.19' }
+    }
+*/
     agent any
+
+    def app
 
     tools {
         maven 'maven3'
@@ -37,9 +45,20 @@ pipeline {
             }
             steps {
                 script {
-                   // app = docker.build(DOCKER_IMAGE_NAME + ":${env.BUILD_ID}")
                     app = docker.build(DOCKER_IMAGE_NAME + ":latest")
-                    app.push()
+                }
+            }
+        }
+
+        stage('Push Docker Image'){
+            when {
+                branch 'main'
+            }
+            steps {
+                script {
+                    docker.withRegistry('https://hub.docker.com', 'docker-cred'){
+                        app.push()
+                    }
                 }
             }
         }

@@ -19,7 +19,7 @@ public class ApplicationStartListener implements ApplicationListener<Application
   public void onApplicationEvent(ApplicationStartedEvent ignored) {
 
 
-    log.info("Environment variables for v0.3.0 version:");
+    log.info("Environment variables for v0.3.1 version:");
     log.info("Database Client created with: [baseUrl: {}]",
              dataSourceUrl
     );

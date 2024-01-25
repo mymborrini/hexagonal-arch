@@ -4,12 +4,14 @@ import dev.skynet.alpha.application.dto.NewMovie;
 import dev.skynet.alpha.application.services.MovieService;
 import dev.skynet.alpha.model.Movie;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/movies")
+@Slf4j
 public class MovieController {
 
   private final MovieService movieService;
@@ -21,6 +23,7 @@ public class MovieController {
 
   @GetMapping
   public List<Movie> findAllMovies(){
+    log.info("Application version v0.1.0");
     return movieService.findAllMovies();
   }
 

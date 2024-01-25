@@ -23,7 +23,7 @@ public class MovieController {
 
   @GetMapping
   public List<Movie> findAllMovies(){
-    log.info("Application version v0.1.0");
+    log.info("Application latest version v1");
     return movieService.findAllMovies();
   }
 

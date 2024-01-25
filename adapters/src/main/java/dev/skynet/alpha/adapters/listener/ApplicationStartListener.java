@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-@RequiredArgsConstructor
 public class ApplicationStartListener implements ApplicationListener<ApplicationStartedEvent> {
 
   @Value("${spring.datasource.url}")

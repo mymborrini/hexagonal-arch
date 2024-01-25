@@ -3,10 +3,9 @@ spring:
   application:
     name: Alpha
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://psql15-svc/postgres
     username: postgres
     password: postgres123
   jpa:
     hibernate:
       ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
